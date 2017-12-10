@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="MVVM_RxSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="btnFacebook" destination="kk5-iv-Iu8" id="llX-ZT-ctm"/>
+                <outlet property="btnSignIn" destination="AC8-e6-jGw" id="NKE-26-F4u"/>
+                <outlet property="btnSignUp" destination="HgC-r6-f32" id="pp0-bJ-azk"/>
+                <outlet property="textFieldPassword" destination="YmH-56-Uje" id="75S-rG-WYZ"/>
+                <outlet property="textFieldUsername" destination="au5-1a-9xU" id="Fwj-9i-xMM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="azU-NP-oeO">
+                    <rect key="frame" x="56.5" y="397.5" width="262.5" height="167"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AC8-e6-jGw">
+                            <rect key="frame" x="0.0" y="0.0" width="262.5" height="55.5"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HgC-r6-f32">
+                            <rect key="frame" x="0.0" y="55.5" width="262.5" height="56"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kk5-iv-Iu8">
+                            <rect key="frame" x="0.0" y="111.5" width="262.5" height="55.5"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APP NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQ2-jo-pjS">
+                    <rect key="frame" x="37.5" y="103.5" width="300" height="33"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="au5-1a-9xU">
+                    <rect key="frame" x="56.5" y="225.5" width="262.5" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YmH-56-Uje">
+                    <rect key="frame" x="56.5" y="280.5" width="262.5" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsW-BF-Pco">
+                    <rect key="frame" x="56" y="565.5" width="262.5" height="30"/>
+                    <state key="normal" title="Forgot Password?"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="azU-NP-oeO" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.7" id="0Cg-VT-iJJ"/>
+                <constraint firstItem="au5-1a-9xU" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.7" id="1en-SZ-CjK"/>
+                <constraint firstItem="YmH-56-Uje" firstAttribute="width" secondItem="au5-1a-9xU" secondAttribute="width" id="5t9-ej-DKm"/>
+                <constraint firstItem="YmH-56-Uje" firstAttribute="top" secondItem="au5-1a-9xU" secondAttribute="bottom" constant="25" id="6xQ-PI-1UP"/>
+                <constraint firstItem="IQ2-jo-pjS" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Cc8-5q-RUO"/>
+                <constraint firstItem="xsW-BF-Pco" firstAttribute="width" secondItem="azU-NP-oeO" secondAttribute="width" id="FwY-er-94j"/>
+                <constraint firstItem="azU-NP-oeO" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="1.4" id="I1Q-c4-eIP"/>
+                <constraint firstItem="xsW-BF-Pco" firstAttribute="top" secondItem="kk5-iv-Iu8" secondAttribute="bottom" constant="1" id="Js7-uB-o6d"/>
+                <constraint firstItem="IQ2-jo-pjS" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="0.35" id="NYz-Bp-56w"/>
+                <constraint firstItem="au5-1a-9xU" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Oi5-w8-UZ3"/>
+                <constraint firstItem="IQ2-jo-pjS" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="QFE-tk-x4y"/>
+                <constraint firstItem="azU-NP-oeO" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.25" id="QGU-mZ-2Ha"/>
+                <constraint firstItem="xsW-BF-Pco" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="XGL-St-NE1"/>
+                <constraint firstItem="azU-NP-oeO" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="hYe-qy-ORk"/>
+                <constraint firstItem="YmH-56-Uje" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="ndM-Zy-3WL"/>
+                <constraint firstItem="au5-1a-9xU" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="0.7" id="oNe-YK-28g"/>
+                <constraint firstItem="IQ2-jo-pjS" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.05" id="pJV-Fa-IiI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
